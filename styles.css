@@ -40,7 +40,7 @@ header{
 }
 .panel-content {
     width: 70%;
-    height: 700px;
+    height: 655px;
     display: inline-block;
     
 }
@@ -59,12 +59,12 @@ header{
 	background-attachment: scroll;
     background-color: rgb(75, 75, 75);
     width: 100%;
-    height: 54.29%;
+    height: 56.9%;
 }
 
 .lower-panel{
     width: 100%;
-    height: 45.71%;
+    height: 43.1%;
 }
 
 .panel-slider-button-left{
@@ -311,7 +311,7 @@ font-family: FontAwesome;
     width: 70%;
     height: 10%;
     position: absolute;
-    top: 73.2%;
+    top: 73.3%;
 }
 .bank-icon{
     position: absolute;
@@ -365,7 +365,7 @@ font-family: FontAwesome;
     width: 70%;
     height: 10%;
     position: absolute;
-    top: 83.3%;
+    top: 83.4%;
 }
 .aminities-icon{
     position: absolute;
