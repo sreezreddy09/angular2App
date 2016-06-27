@@ -1,0 +1,22 @@
+    <!--Left Slider Button-->
+        <div class="panel-slider-button-left"> 
+            <i class="fa fa-arrow-circle-left fa-3x left-icon" aria-hidden="true" (click) = "listReduce()" ></i>
+        </div>
+
+     <!--Upper Pannel info Display-->
+        <div class = "panel-info"> 
+            <span class="panel-title">What’s the highest rated resturant in this area?</span>
+            <span class="panel-listing"><strong> {{current.name}} </strong>  </span>
+            <img class="panel-circle" src="{{current.image}}">
+            <div class="panel-address"><span> {{current.type}} </span> <br>
+                <span> {{current.address}} . {{current.location}} </span>
+            </div>
+            <div class="panel-list">
+                <i class="fa fa-home fa-2x icon-home" aria-hidden="true"></i>
+                <span class="panel-list-title">See The List </span>
+            </div>
+        </div>
+        <!--Right Slider Button-->
+        <div class="panel-slider-button-right">
+            <i class="fa fa-arrow-circle-right fa-3x right-icon" aria-hidden="true" (click) = "listIncrease()" ></i>
+        </div>

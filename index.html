@@ -1,25 +1,25 @@
 <html>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Angular 2 APP</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stykesheet" href="node_modules/lato-font/css/lato-font.css">
     <link rel="stylesheet" href="node_modules/lato-font/fonts/lato-black/lato-black.ttf">
     <link rel="stylesheet" href="styles.css">
-    <!-- 1. Load libraries -->
+    <!-- Load libraries -->
      <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <!-- 2. Configure SystemJS -->
+    <!-- Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
   </head>
-  <!-- 3. Display the application -->
+  <!--Display the application -->
   <body>
   <div class="main-module">
     <header>
@@ -31,23 +31,8 @@
         <!--Left Panel Display View-->
         <div class="panel-content">
           <div class="upper-panel">
-              <div class="panel-slider-button-left"> <i class="fa fa-chevron-left fa-3x left-icon" aria-hidden="true"></i></div>
-
-              <!--Upper Pannel info Display-->
-              <div class = "panel-info"> 
-                  <span class="panel-title">What’s the highest rated resturant in this area?</span>
-                  <span class="panel-listing">[Listing Name]</span>
-                  <div class="panel-circle"></div>
-                  <div class="panel-address"><span> [Establishment]</span> <br>
-                  <span>[Establishment address]. [Location]</span></div>
-                  <div class="panel-list">
-                    <i class="fa fa-home fa-2x icon-home" aria-hidden="true"></i>
-                    <span class="panel-list-title">See The List </span>
-                  </div>
-              </div>
-
-
-              <div class="panel-slider-button-right"> <i class="fa fa-chevron-right fa-3x right-icon" aria-hidden="true"></i></div>
+            <restaurent-list></restaurent-list>
+               
           </div>
 
           <!--Left Lower Panel Display View-->
@@ -91,107 +76,25 @@
 
         <!-- Right Panel Display View-->
         <div class = "navigation"></div>
+             <!--Top Arrow Button-->
             <div class="up-button"><i class="fa fa-chevron-up fa-2x up-arrow" aria-hidden="true"></i></div>
-
+              <!--Near By Reaturents Button-->
             <div class= "nearby-restaurent"> <i class="fa fa-cutlery fa-4x restaurent-icon" aria-hidden="true"></i>  
                 <span class = "nearby-restaurent-icon">Nearby <br/>
                   Restaurants </span> </div>
-
+              <!--Near By Groceries Button-->
             <div class= "nearby-groceries"> <i class="fa fa-cart-plus fa-4x groceries-icon" aria-hidden="true"></i>  
                 <span class = "nearby-groceries-icon">Nearby <br/>
                   Groceries </span> </div>
-
+              <!--Near By Banks Button-->
             <div class="nearby-banks"><i class="fa fa-money fa-4x bank-money-icon" aria-hidden="true"></i>  
                 <span class = "nearby-bank-icon">Nearby <br/>
                   Banks </span> </div>
-            
+              <!--Down Arrow Button-->
             <div class="down-button"> <i class="fa fa-chevron-down fa-2x down-arrow" aria-hidden="true"></i> </div>
-
       </div>
-
+        <!--End of Right Panel Display View-->
     </div>
-
-
-
-
-
-    <!--<div class="placeholder">
-      <div class= "main-content">
-          <div class="panel-content">
-            
-              <div class="panel-bg">
-                <div class="panel-slider-button-left"> <i class="fa fa-chevron-left fa-3x left-icon" aria-hidden="true"></i></div>
-                <div class="panel-slider-button-right"> <i class="fa fa-chevron-right fa-3x right-icon" aria-hidden="true"></i></div>
-              </div>
-              <div class="panel-below">
-                <div class="food-list"> <i class="fa fa-cutlery fa-2x food-icon" aria-hidden="true"></i>
-                      <span class="food-name"> Resturants <br>
-                      ## near this listing</span>
-                      <span class="food-all-list">See All</span>
-                      <span class=" arrow-list"> <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i> </span>
-                      <span class="food-border"></span>
-                 </div>
-
-                <div class="store-list"> <i class="fa fa-cart-plus fa-2x store-icon" aria-hidden="true"></i>
-                      <span class="store-name"> Groceries <br>
-                      ## near this listing</span>
-                      <span class="store-all-list">See All</span>
-                      <span class=" store-arrow-list"> <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i> </span>
-                      <span class="store-border"></span>
-                 </div>
-
-
-                 <div class="bank-list"> <i class="fa fa-money fa-2x bank-icon" aria-hidden="true"></i>
-                      <span class="bank-name"> Banks <br>
-                      ## near this listing</span>
-                      <span class="bank-all-list">See All</span>
-                      <span class=" bank-arrow-list"> <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i> </span>
-                      <span class="bank-border"></span>
-                 </div>
-
-
-
-                 <div class="aminities-list"> <i class="fa fa-ellipsis-h fa-2x aminities-icon" aria-hidden="true"></i>
-                      <span class="aminities-name"> Other Aminities <br>
-                      ## near this listing</span>
-                      <span class="aminities-all-list">See All</span>
-                      <span class=" aminities-arrow-list"> <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i> </span>
-                      <span class="aminities-border"></span>
-                 </div>
-                 
-              </div>
-              <div class = "panel-info"> 
-                  <span class="panel-title">What’s the highest rated resturant in this area?</span>
-                  <span class="panel-listing">[Listing Name]</span>
-                  <div class="panel-circle"></div>
-                  <div class="panel-address"><span> [Establishment]</span> <br>
-                  <span>[Establishment address]. [Location]</span></div>
-                  <div class="panel-list">
-                    <i class="fa fa-home fa-2x icon-home" aria-hidden="true"></i>
-                    <span class="panel-list-title">See The List </span>
-                  </div>
-              </div>
-              
-          </div>
-
-
-
-            <div class = "navigation">
-                <div class="up-button"><i class="fa fa-chevron-up fa-2x up-arrow" aria-hidden="true"></i></div>
-                <div class= "nearby-restaurent"> <i class="fa fa-cutlery fa-4x restaurent-icon" aria-hidden="true"></i>  
-                <span class = "nearby-restaurent-icon">Nearby <br/>
-                  Restaurants </span> </div>
-                  <div class= "nearby-groceries"> <i class="fa fa-cart-plus fa-4x groceries-icon" aria-hidden="true"></i>  
-                <span class = "nearby-groceries-icon">Nearby <br/>
-                  Groceries </span> </div>
-                    <div class="nearby-banks"><i class="fa fa-money fa-4x bank-money-icon" aria-hidden="true"></i>  
-                <span class = "nearby-bank-icon">Nearby <br/>
-                  Banks </span> </div>
-                      <div class="down-button"> <i class="fa fa-chevron-down fa-2x down-arrow" aria-hidden="true"></i> </div>
-                  
-            </div>
-      </div>-->
-    <!--</div>-->
   </div>
   </body>
 </html>

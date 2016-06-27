@@ -24,7 +24,7 @@ header{
 .placeholder{
     width: 100%;
     /* height in pixels 691px or 93.9%*/
-    height: 750px;
+    height: 700px;
     display: inline-block;
     /*position: absolute;*/
     /*top : 50 px;*/
@@ -37,6 +37,7 @@ header{
     position: relative;
     top: 15;
     left: 15;
+    
 }
 .panel-content {
     width: 70%;
@@ -77,8 +78,10 @@ header{
 }
 
 .left-icon{
+    cursor: pointer;
     position: absolute;
     top: 20%;
+    left: 13%
 }
 
 .panel-slider-button-right{
@@ -91,9 +94,10 @@ display: inline-block;
     top: 18%;
 }
 .right-icon{
+    cursor: pointer;
     position: absolute;
     top: 20%;
-    left: 8%;
+    left: 15%;
 }
 
 .panel-info{
@@ -107,7 +111,7 @@ display: inline-block;
 .panel-title{
     font-family: Cambria;
     color: #ffffff;
-    font-size: inherit;
+    font-size: 18px;
     font-weight: 900;
     line-height: 20px;
     text-align: center;
@@ -116,15 +120,15 @@ display: inline-block;
 }
 
 .panel-listing{
-        font-family: Cambria;
-    color: #ffffff;
-    font-size: inherit;
+    font-family: cursive;
+    color: #44b244;
+    font-size: 22px;
     font-weight: 400;
     line-height: 46px;
-    text-align: center;
-    position: absolute;
+    text-align: justify;
+    position: relative;
     top: 6%;
-    left: 40%;
+    left: 35%;
 }
 
 .panel-circle{
@@ -138,8 +142,9 @@ display: inline-block;
     height: 160px;
     position: absolute;
     top: 22%;
-    left: 37%
+    left: 40%
 }
+
 
 .panel-address{
     font-family: Lato;
